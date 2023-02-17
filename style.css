@@ -1,15 +1,18 @@
+/*Apply to all elements*/
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
     font-weight: normal;
 }
 
+/*Apply to padding, margin and the background color to the backdrop of the app*/
 body {
     padding: 0;
     margin: 0;  
     background-color: beige;
 }
 
+/*Apply css to calculator body*/
 .calculator-grid {
     display: grid;
     justify-content: center;
@@ -20,6 +23,7 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
+/*Apply to all buttons in the grid*/
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
@@ -29,14 +33,17 @@ body {
 
 }
 
+/*When the mouse hovers over a button apply different color*/
 .calculator-grid > button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+/*Making sure certain buttons spans across 2 columns*/
 .span-two {
     grid-column: span 2;
 }
 
+/*CSS for the output screen*/
 .output {
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, 0.75);
