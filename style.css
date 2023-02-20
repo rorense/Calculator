@@ -16,7 +16,6 @@ body {
 .calculator-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
@@ -56,7 +55,7 @@ body {
     word-break: break-all;
 }
 
-/*CSS for the top part of the output screen*/
+/*CSS for the previous operand part of the output screen*/
 .output .previous-operand {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.5rem;
